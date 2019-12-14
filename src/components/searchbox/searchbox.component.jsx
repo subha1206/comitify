@@ -3,6 +3,20 @@ import React from 'react';
 const SearchBar = ({onsubmit, onchange}) => {
    return(
        <div>
+            <section class="ph3 ph5-ns pv5">
+                <article class=" center br2 ba b--light-blue bg-lightest-blue">
+                    <div class="dt-ns dt--fixed-ns w-100">
+                        <div class="pa3 pa4-ns dtc-ns v-mid">
+                            <div>
+                                <h2 class="fw4 blue mt0 mb3">Commitify </h2>
+                                <p class="black-70 measure lh-copy mv0">
+                                This Simple React application will help you to find latest branch and commits of an organization.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
         <form 
         className=" mw8 center pa4"
         onSubmit={onsubmit}
@@ -23,6 +37,7 @@ const SearchBar = ({onsubmit, onchange}) => {
                 value="Subscribe"/>
             </div>
         </form>
+
        </div>
    )
 }

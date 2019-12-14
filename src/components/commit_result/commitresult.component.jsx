@@ -8,10 +8,10 @@ const Commits = ({id, authorname, authorpicture,commitmessage,commitdate}) => {
               <img className="w2 h2 w3-ns h3-ns br-100" src={authorpicture} alt=""/>
                 <div className="pl3 flex-auto">
                     <span className="f6 db black-70"><strong>name: {authorname}</strong></span>
-                    <span className="f6 db black-70"><strong>Message:</strong>{commitmessage}</span>
+                    <span className="f6 db black-70"><strong>Message:</strong>{commitmessage.substr(0,120)+"..."}</span>
                 </div>
                 <div>
-                    <p className="f6 blue hover-dark-gray-pointer">{commitdate}</p>
+                    <p className="f6 blue hover-dark-gray-pointer commit-date">{commitdate}</p>
                 </div>
             </li>
        </div> 

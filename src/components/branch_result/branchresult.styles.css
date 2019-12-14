@@ -4,3 +4,9 @@ h4{
 .branchlist{
     padding: 20px;
 }
+.commit-date{
+    margin: 10px;
+}
+.get-commit{
+    margin: 10px;
+}
