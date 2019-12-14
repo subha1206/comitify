@@ -1,3 +1,6 @@
-.App {
-  text-align: center;
+.abc{
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: space-around;
 }
