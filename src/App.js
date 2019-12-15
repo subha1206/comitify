@@ -20,6 +20,7 @@ class App extends React.Component {
     }
     this.handleSearch = this.handleSearch.bind(this)
     this.getBranch = this.getBranch.bind(this)
+    this.getCommit = this.getCommit.bind(this)
   }
   handleSearch = (e) => {
     this.setState({searchTerm: e.target.value});   
@@ -29,7 +30,6 @@ class App extends React.Component {
   fetch(`https://api.github.com/repos/${this.state.searchTerm}/branches`)
   .then(response => response.json())
   .then(branch => this.setState({branches:branch,isLoading:true}))
-  .then(console.log())
   }
   getCommit = (event) => {
         console.log(event.target.id);
@@ -37,11 +37,7 @@ class App extends React.Component {
         .then(response => response.json())
         .then(json => this.setState({commits:json, branches:this.state.branches, isLoading:false, iscommitsloaded:true}))
      }
-  // componentDidMount() {
-  //   if(!this.state.isLoading ){
-  //   console.log(this.state.branches)
-  //   }
-  // }
+ 
     render(){
       if(this.state.isLoading){
       return(
