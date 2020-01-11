@@ -1,7 +1,7 @@
 import React from 'react';
-import BranchList from './components/branch_result/branchlist.component'
-import SearchBar from './components/searchbox/searchbox.component';
-import CommitList from './components/commit_result/commitlist.component'
+import BranchList from '../components/branch_result/branchlist.component'
+import SearchBar from '../components/searchbox/searchbox.component';
+import CommitList from '../components/commit_result/commitlist.component'
 import './App.css';
 import 'tachyons'
 
